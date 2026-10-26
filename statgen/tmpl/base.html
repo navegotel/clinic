@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang={{lang or "en"}}>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{title or 'InBalance'}}</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+	</head>
+	<body>
+        <section class="hero">
+			<div class="hero-body">
+				<img src="img/logo.png" alt="InBalance logo">
+			</div>
+		</section>
+        <section class="section">
+        {% block content%}
+        
+        {% endblock%}
+        </section>
+        <footer class="footer">
+            <div class="columns">
+                <div class="column">
+                    <div class="content">
+                        <h5>Legal stuff | Info legal</h5>
+                        <ul>
+                            <li><b>Licencia de apertura:</b> 25-R-RE-10446 </li>
+                            <li><b>Registro de Centros Sanitarios:</b> nº 45216 </li>
+                            <li><b>Responsable:</b> Markus Barth Classen </li>
+                            <li><b>Colegiado:</b>b> nº 9747</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <h5>Contact | Contacto</h5>
+                        <ul>
+                            <li><b>phone | teléfono:</b> +34 623 609 667 </li>
+                            <li><a href="mailto:clínica@markusbarth.net">clínica@markusbarth.net</a></li>
+                            <li><a href="https://wa.me/34623609667" >WhatsApp</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61560985688586">facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <h5>Address | Dirección</h5>
+                        <p>
+                        InBalance Physiotherapy<br>
+                        Plaza de la Figuera 1, locales 3-4<br>
+                        Urb. El Raso<br>
+                        03140 Guardamar del Segura<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
