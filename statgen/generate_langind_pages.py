@@ -39,6 +39,24 @@ if __name__ == "__main__":
                         'lang': 'de',
             },
         },
+        {
+            'filename': 'onto_es.html',
+            'context': {'title':'Rehabilitación oncológica',
+                        'lang': 'es',
+            },
+        },
+        {
+            'filename': 'onto_en.html',
+            'context': {'title':'Cancer Rehab',
+                        'lang': 'en',
+            },
+        },
+        {
+            'filename': 'onto_de.html',
+            'context': {'title':'Reha nach Krebs',
+                        'lang': 'de',
+            },
+        },
     ]
     pg = PageGenerator("./tmpl/", templates, "..")
     pg.generate()
