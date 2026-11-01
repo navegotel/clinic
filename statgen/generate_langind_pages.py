@@ -23,14 +23,16 @@ class PageGenerator(object):
 if __name__ == "__main__":
     templates = [{
             'filename': 'ictus_es.html',
-            'context': {'title':'Apoyo con ictus',
+            'context': {'title':'Fisioterapia para Ictus en Clínica y a Domicilio',
                         'lang': 'es',
+                        'description': 'Rehabilitación neurológica avanzada tras un ictus. Fisioterapeutas cualificados en clínica y en la comodidad de su domicilio. Recupere su autonomía.'
             },
         },
         {
             'filename': 'ictus_en.html',
-            'context': {'title':'Help with ictus',
+            'context': {'title':'Stroke Physiotherapy | In-Clinic & Home Rehab Services',
                         'lang': 'en',
+                        'description': 'Neurological stroke rehabilitation. Qualified physiotherapists providing expert care in-clinic and at home. Regain your mobility.'
             },
         },
         {
