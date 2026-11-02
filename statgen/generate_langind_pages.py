@@ -25,20 +25,33 @@ if __name__ == "__main__":
             'filename': 'ictus_es.html',
             'context': {'title':'Fisioterapia para Ictus en Clínica y a Domicilio',
                         'lang': 'es',
-                        'description': 'Rehabilitación neurológica avanzada tras un ictus. Fisioterapeutas cualificados en clínica y en la comodidad de su domicilio. Recupere su autonomía.'
+                        'description': 'Rehabilitación neurológica avanzada tras un ictus. Fisioterapeutas cualificados en clínica y en la comodidad de su domicilio. Recupere su autonomía.',
+                        'hreflang': {
+                            'en': 'https://clinica.markusbarth.net/ictus_en.html',
+                            'de': 'https://clinica.markusbarth.net/ictus_de.html',
+                        }
             },
         },
         {
             'filename': 'ictus_en.html',
             'context': {'title':'Stroke Physiotherapy | In-Clinic & Home Rehab Services',
                         'lang': 'en',
-                        'description': 'Neurological stroke rehabilitation. Qualified physiotherapists providing expert care in-clinic and at home. Regain your mobility.'
+                        'description': 'Neurological stroke rehabilitation. Qualified physiotherapists providing expert care in-clinic and at home. Regain your mobility.',
+                        'hreflang': {
+                            'es': 'https://clinica.markusbarth.net/ictus_es.html',
+                            'de': 'https://clinica.markusbarth.net/ictus_de.html',
+                        }
             },
         },
         {
             'filename': 'ictus_de.html',
-            'context': {'title':'Hilfe bei Ictus',
+            'context': {'title':'Physiotherapie nach Schlaganfall | Praxis & Hausbesuche',
                         'lang': 'de',
+                        'description': 'Neurologische Rehabilitation nach einem Schlaganfall. Erfahrene Physiotherapeuten in der Praxis & bei Ihnen zu Hause. Mobilität zurückgewinnen.',
+                        'hreflang': {
+                            'en': 'https://clinica.markusbarth.net/ictus_en.html',
+                            'es': 'https://clinica.markusbarth.net/ictus_es.html',
+                        }
             },
         },
         {
@@ -62,3 +75,4 @@ if __name__ == "__main__":
     ]
     pg = PageGenerator("./tmpl/", templates, "..")
     pg.generate()
+
