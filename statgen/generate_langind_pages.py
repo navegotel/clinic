@@ -21,7 +21,12 @@ class PageGenerator(object):
 
 
 if __name__ == "__main__":
-    templates = [{
+    templates = [
+        {
+            'filename': 'index.html',
+            'context': {},
+        },
+        {
             'filename': 'ictus_es.html',
             'context': {'title':'Fisioterapia para Ictus en Clínica y a Domicilio',
                         'lang': 'es',
