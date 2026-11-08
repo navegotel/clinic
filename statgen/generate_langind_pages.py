@@ -67,8 +67,14 @@ if __name__ == "__main__":
         },
         {
             'filename': 'onto_en.html',
-            'context': {'title':'Cancer Rehab',
+            'context': {'title':'Physiotherapy After Cancer Treatment | InBalance Guardamar',
                         'lang': 'en',
+                        'description': 'Individualised physiotherapy after cancer treatment in Guardamar del Segura. Improve strength, mobility and physical function. Lymphoedema treatment available.',
+                        'hreflang': {
+                            'de': 'https://clinica.markusbarth.net/onto_de.html',
+                            'es': 'https://clinica.markusbarth.net/onto_es.html',
+                        }
+                        
             },
         },
         {
