@@ -62,8 +62,13 @@ if __name__ == "__main__":
         },
         {
             'filename': 'onto_es.html',
-            'context': {'title':'Rehabilitación oncológica',
+            'context': {'title':'Fisioterapia Oncológica en Guardamar | InBalance',
                         'lang': 'es',
+                        'description': 'Fisioterapia durante y después del cáncer en Guardamar del Segura. Recupera fuerza y movilidad con ejercicio terapéutico y atención individualizada. También ofrecemos visitas a domicilio.',
+                        'hreflang': {
+                            'de': 'https://clinica.markusbarth.net/onto_de.html',
+                            'en': 'https://clinica.markusbarth.net/onto_en.html',
+                        }
             },
         },
         {
@@ -80,8 +85,13 @@ if __name__ == "__main__":
         },
         {
             'filename': 'onto_de.html',
-            'context': {'title':'Reha nach Krebs',
+            'context': {'title':'Physiotherapie nach Krebs | InBalance Guardamar',
                         'lang': 'de',
+                        'description': 'Physiotherapie nach einer Krebsbehandlung in Guardamar. Individuelle Rehabilitation, therapeutische Übungen und Lymphödemtherapie. Auch Hausbesuche in der Umgebung.',
+                        'hreflang': {
+                            'en': 'https://clinica.markusbarth.net/onto_en.html',
+                            'es': 'https://clinica.markusbarth.net/onto_es.html',
+                        }
             },
         },
     ]
