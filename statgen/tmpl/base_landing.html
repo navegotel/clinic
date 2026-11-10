@@ -59,11 +59,40 @@
             </div>
 			<div class="hero-body">
                 <div class="columns is-vcentered">
-                    <div class="column is-two-thirds">
-                        <img src="img/paralelas02.png">
-                    </div>
                     <div class="column">
-                        <img src="img/logo.png" class="mx-4" alt="InBalance logo">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image mx-4">
+                                    <img src="img/logo.png" alt="InBalance physiotherapy logo" >
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <aside class="menu">
+                                    <ul class="menu-list">
+                                        {% if lang == 'en' %}
+                                        <li><a>Neurological Physiotherapy</a>
+                                        </li>
+                                        <li><a>Rehabilitation after surgery</a></li>
+                                        <li><a href="https://clinica.markusbarth.net/onto_en.html">Recovery after cancer treatment</a></li>
+                                        <li><a>Help with balance and walking</a></li>
+                                        {% elif lang == 'es' %}
+                                        <li><a>Fisioterapia neurológica</a></li>
+                                        <li><a>Rehabilitación después de cirugía</a></li>
+                                        <li><a>Recuperación después de cáncer</a></li>
+                                        <li><a>Ayuda con marchar y equilibrio</a></li>
+                                        {% elif lang == 'de' %}
+                                        <li><a>Neurologische Physiotherapie</a></li>
+                                        <li><a>Rehabilitation nach OP</a></li>
+                                        <li><a>Fit werden nach Krebsbehandlung</a></li>
+                                        <li><a>Hilfe mit Gleichgewicht und Gehen</a></li>
+                                        {% endif %}
+                                    </ul>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-two-thirds">
+                        <img src="img/paralelas03.jpg">
                     </div>
                 </div>
 			</div>

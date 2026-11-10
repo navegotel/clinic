@@ -19,6 +19,11 @@ class PageGenerator(object):
     def generate(self):
         for item in self.templates:
             self.generate_page(item['filename'], item['context'])
+            
+    def get_menu_entries(self, lang):
+        for item in self.templates:
+            if item['context'].get('lang') == lang:
+                print(item['filename'])
 
 
 if __name__ == "__main__":
@@ -96,5 +101,6 @@ if __name__ == "__main__":
         },
     ]
     pg = PageGenerator("./tmpl/", templates, "..")
+    pg.get_menu_entries('es')
     pg.generate()
 
