@@ -75,8 +75,19 @@
                                 <aside class="menu">
                                     <ul class="menu-list">
                                         
-                                        <li><a>Neurologische Physiotherapie</a></li>
-                                        <li><a>Rehabilitation nach OP</a></li>
+                                        <li><a class="menu-dropdown-trigger">Neurologische Physiotherapie</a>
+                                            <ul class="is-hidden">
+                                                <li><a<li><a href="ictus_de.html">>Schlaganfall</a></li>
+                                                <li><a>Parkinsons</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="menu-dropdown-trigger">Rehabilitation nach OP</a>
+                                        <ul class="is-hidden">
+                                                <li><a>künstliches Hüftgelenk</a></li>
+                                                <li><a>künstliches Kniegelenk</a></li>
+                                                <li><a>künstliches Schultergelenk</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a>Fit werden nach Krebsbehandlung</a></li>
                                         <li><a>Hilfe mit Gleichgewicht und Gehen</a></li>
                                         
@@ -369,5 +380,20 @@
         });
 
     });
+    document.addEventListener('DOMContentLoaded', () => {
+  const triggers = document.querySelectorAll('.menu-dropdown-trigger');
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      // Find the nested <ul> right next to the clicked link
+      const submenu = trigger.nextElementSibling;
+      
+      if (submenu) {
+        submenu.classList.toggle('is-hidden');
+        trigger.classList.toggle('is-active');
+      }
+    });
+  });
+});
     </script>
 </html>

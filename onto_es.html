@@ -75,8 +75,19 @@
                                 <aside class="menu">
                                     <ul class="menu-list">
                                         
-                                        <li><a>Fisioterapia neurológica</a></li>
-                                        <li><a>Rehabilitación después de cirugía</a></li>
+                                        <li><a class="menu-dropdown-trigger">Fisioterapia neurológica</a>
+                                            <ul class="is-hidden">
+                                                <li><li><a href="ictus_es.html">Ictus</a></li>
+                                                <li><a>Parkinson</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="menu-dropdown-trigger">Rehabilitación después de cirugía</a>
+                                            <ul class="is-hidden">
+                                                <li><a>Protesis de cadera</a></li>
+                                                <li><a>Protesis de rodilla</a></li>
+                                                <li><a>Protesis de hombro</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a>Recuperación después de cáncer</a></li>
                                         <li><a>Ayuda con marchar y equilibrio</a></li>
                                         
@@ -367,5 +378,20 @@
         });
 
     });
+    document.addEventListener('DOMContentLoaded', () => {
+  const triggers = document.querySelectorAll('.menu-dropdown-trigger');
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      // Find the nested <ul> right next to the clicked link
+      const submenu = trigger.nextElementSibling;
+      
+      if (submenu) {
+        submenu.classList.toggle('is-hidden');
+        trigger.classList.toggle('is-active');
+      }
+    });
+  });
+});
     </script>
 </html>

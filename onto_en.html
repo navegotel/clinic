@@ -75,9 +75,19 @@
                                 <aside class="menu">
                                     <ul class="menu-list">
                                         
-                                        <li><a>Neurological Physiotherapy</a>
+                                        <li><a class="menu-dropdown-trigger">Neurological Physiotherapy</a>
+                                            <ul class="is-hidden">
+                                                <li><a href="ictus_en.html">Stroke</a></li>
+                                                <li><a>Parkinson's disease</a></li>
+                                            </ul>
                                         </li>
-                                        <li><a>Rehabilitation after surgery</a></li>
+                                        <li><a class="menu-dropdown-trigger">Rehabilitation after surgery</a>
+                                            <ul class="is-hidden">
+                                                <li><a>Hip replacement</a></li>
+                                                <li><a>Knee replacement</a></li>
+                                                <li><a>Shoulder replacement</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="https://clinica.markusbarth.net/onto_en.html">Recovery after cancer treatment</a></li>
                                         <li><a>Help with balance and walking</a></li>
                                         
@@ -315,5 +325,20 @@
         });
 
     });
+    document.addEventListener('DOMContentLoaded', () => {
+  const triggers = document.querySelectorAll('.menu-dropdown-trigger');
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      // Find the nested <ul> right next to the clicked link
+      const submenu = trigger.nextElementSibling;
+      
+      if (submenu) {
+        submenu.classList.toggle('is-hidden');
+        trigger.classList.toggle('is-active');
+      }
+    });
+  });
+});
     </script>
 </html>
